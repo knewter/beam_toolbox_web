@@ -4,7 +4,7 @@
     <ul>
       <%= for project <- @projects do %>
         <li>
-          <a href="http://hex.pm/packages/<%= project.key %>"><%= project.key %></a>
+          <a href="<%= Router.project_path(id: project.key) %>"><%= project.key %></a>
         </li>
       <%= end %>
     </ul>
