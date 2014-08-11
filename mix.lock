@@ -1,4 +1,4 @@
-%{"beam_toolbox_data": {:git, "git://github.com/knewter/beam_toolbox_data.git", "0b6e0a9ef9fdd6cc91ed1a4a2c50834021bbf0a2", []},
+%{"beam_toolbox_data": {:git, "git://github.com/knewter/beam_toolbox_data.git", "2782d41119b60a1cf4be07fe380e93f0b63a9034", []},
   "cowboy": {:package, "1.0.0"},
   "cowlib": {:package, "1.0.0"},
   "decimal": {:git, "git://github.com/ericmj/decimal.git", "c79af3ba3af64caa510c3337091928cb17af480b", []},
