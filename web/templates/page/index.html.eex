@@ -1,28 +1,15 @@
-<div class="row marketing">
-  <div class="col-lg-6">
-    <h4>Latest Projects</h4>
-    <ul>
-      <%= for project <- @projects do %>
-        <li>
-          <a href="<%= Router.project_path(id: project.key) %>"><%= project.key %></a>
-        </li>
-      <%= end %>
-    </ul>
-  </div>
-
-  <div class="col-lg-6">
-    <h4>Categories</h4>
-    <ul>
+<div class="latest-projects">
+  <h2>Latest Projects</h2>
+  <ul>
+    <%= for project <- @projects do %>
       <li>
-        <a href="https://github.com/phoenixframework/phoenix/issues?state=open">Issues</a>
+        <a href="<%= Router.project_path(id: project.key) %>"><%= project.key %></a>
       </li>
-      <li>
-        <a href="irc://irc.freenode.net/elixir-lang">#elixir-lang on freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/chris_mccord">@chris_mccord</a>
-      </li>
-    </ul>
-  </div>
+    <%= end %>
+  </ul>
 </div>
 
+<div class="categories">
+  <h2>Categories</h2>
+  <p>Categories are coming next, oops.</p>
+</div>

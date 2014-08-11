@@ -7,6 +7,13 @@ To start your new Phoenix application you have to:
 
 Now you can visit `localhost:4000` from your browser.
 
+## Development
+
+CSS is written using sass.  You can compile it with `make css` assuming you have
+the ruby and rubygems installed.
+
+If you want the CSS to be watched under development, just run `make watch`
+
 
 ## Notes
 

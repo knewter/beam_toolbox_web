@@ -1,0 +1,21 @@
+@import 'lib/bourbon/bourbon';
+@import 'lib/neat/neat';
+@import 'lib/base/base';
+
+@import 'type_system_geometric';
+@import 'header';
+
+.container {
+  @include outer-container;
+  .latest-projects {
+    @include span-columns(6);
+  }
+  .categories {
+    @include span-columns(6);
+    @include omega();
+  }
+}
+
+.footer {
+  @include outer-container;
+}

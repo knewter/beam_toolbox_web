@@ -7,25 +7,23 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hello Phoenix!</title>
-    <link rel="stylesheet" href="/css/app.css">
+    <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Sanchez:400italic,400' rel='stylesheet' type='text/css'>
+
+    <title>BEAM Toolbox</title>
+    <link rel="stylesheet" href="/css/application.css">
   </head>
 
   <body>
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li><a href="https://github.com/phoenixframework/phoenix">Get Started</a></li>
-        </ul>
-        <span class="logo"></span>
-      </div>
+    <div class="container type-system-geometric">
+      <%= render "header.html" %>
 
       <%= @inner %>
 
-      <div class="footer">
-        <p><a href="http://phoenixframework.org">phoenixframework.org</a></p>
-      </div>
-
     </div> <!-- /container -->
+
+    <div class="footer">
+      <p><a href="http://beam-toolbox.com">BEAM Toolbox</a></p>
+    </div>
   </body>
 </html>
