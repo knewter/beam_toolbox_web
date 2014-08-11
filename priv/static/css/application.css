@@ -510,3 +510,7 @@ input[type="submit"] {
     content: "";
     display: table;
     clear: both; }
+
+h2 .comments_link {
+  font-weight: normal;
+  font-size: 0.7em; }

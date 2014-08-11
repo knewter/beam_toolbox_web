@@ -19,3 +19,8 @@
 .footer {
   @include outer-container;
 }
+
+h2 .comments_link {
+  font-weight: normal;
+  font-size: 0.7em;
+}

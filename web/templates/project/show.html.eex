@@ -1,4 +1,7 @@
-<h2><%= @project.key %></h2>
+<h2>
+  <%= @project.key %>
+  <a href='#comments' class='comments_link'>(Comments)</a>
+</h2>
 <p class='description'><%= Project.description(@project) %></p>
 
 <ul class='links'>
@@ -6,4 +9,10 @@
   <li><%= safe source_link(@project) %></li>
 </ul>
 
-<%= render "disqus.html" %>
+<%= if Project.has_github_link?(@project) do %>
+  <%= safe github_readme(@project) %>
+<% end %>
+
+<div id='comments'>
+  <%= render "disqus.html" %>
+</div>

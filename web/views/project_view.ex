@@ -16,4 +16,8 @@ defmodule BeamToolboxWeb.ProjectView do
       _ -> "<a href='#{link}'>#{text}</a>"
     end
   end
+
+  def github_readme(project) do
+    BeamToolboxData.Models.Project.GitHub.readme(project)
+  end
 end
