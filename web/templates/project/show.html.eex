@@ -6,7 +6,9 @@
 
 <ul class='links'>
   <li><%= safe hex_package_link(@project) %></li>
-  <li><%= safe source_link(@project) %></li>
+  <%= for {name, link} <- Project.links(@project) do %>
+    <li><a href="<%= link %>"><%= name %></a></li>
+  <% end %>
 </ul>
 
 <%= if Project.has_github_link?(@project) do %>
