@@ -11,5 +11,11 @@
 
 <div class="categories">
   <h2>Categories</h2>
-  <p>Categories are coming next, oops.</p>
+  <ul>
+    <%= for category <- @categories do %>
+      <li>
+        <%= category.name %>
+      </li>
+    <%= end %>
+  </ul>
 </div>
