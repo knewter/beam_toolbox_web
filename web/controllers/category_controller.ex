@@ -3,6 +3,10 @@ defmodule BeamToolboxWeb.CategoryController do
   alias BeamToolboxData.Models.Project
   alias BeamToolboxData.Models.Category
 
+  def show(conn, %{"id" => "uncategorized"}) do
+    projects = Project.for_category(:uncategorized)
+    render conn, "show", %{category: %Category{slug: "uncategorized", name: "Uncategorized"}, projects: projects}
+  end
   def show(conn, %{"id" => slug}) do
     category = Category.find_by_slug(slug)
     projects = Project.for_category(category)
