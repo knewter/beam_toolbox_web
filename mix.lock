@@ -1,4 +1,4 @@
-%{"beam_toolbox_data": {:git, "git://github.com/knewter/beam_toolbox_data.git", "18c68792cf91d9eeb3b7b7771f101d47e5bf412f", []},
+%{"beam_toolbox_data": {:git, "git://github.com/knewter/beam_toolbox_data.git", "c227c7af3fb7c09f5fe1831044984f629cad9832", []},
   "cadfaerl": {:git, "git://github.com/ddossot/cadfaerl.git", "2be603d0aa7aca9a42e61534807c996c3cbd7be2", []},
   "cowboy": {:package, "1.0.0"},
   "cowlib": {:package, "1.0.0"},
