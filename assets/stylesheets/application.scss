@@ -13,7 +13,10 @@ $lighter-gray: lighten($light-gray, 1%);
 .container {
   @include outer-container;
   .primary {
-    @include span-columns(12);
+    @include span-columns(9);
+  }
+  .sidebar {
+    @include span-columns(3);
     @include omega();
   }
 }
@@ -101,4 +104,12 @@ footer {
   @include outer-container;
   background: $lighter-gray;
   padding: 1em;
+}
+
+.module {
+  h3 {
+    font-size: 100%;
+    background-color: $accented-gray;
+    padding: .5em;
+  }
 }
