@@ -1,19 +1,25 @@
-<h2>
-  <%= @project.key %>
-  <a href='#comments' class='comments_link'>(Comments)</a>
-</h2>
-<p class='description'><%= Project.description(@project) %></p>
+<div class='project-details'>
+  <section class="project-primary-info">
+    <h1>
+      <%= @project.key %>
+      <a href='#comments' class='comments_link'>(Comments)</a>
+    </h1>
+    <p class='description'><%= Project.description(@project) %></p>
+  </section>
 
-<ul class='links'>
-  <li><%= safe hex_package_link(@project) %></li>
-  <%= for {name, link} <- Project.links(@project) do %>
-    <li><a href="<%= link %>"><%= name %></a></li>
+  <ul class='project-links'>
+    <li><%= safe hex_package_link(@project) %></li>
+    <%= for {name, link} <- Project.links(@project) do %>
+      <li><a href="<%= link %>"><%= name %></a></li>
+    <% end %>
+  </ul>
+</div>
+
+<article>
+  <%= if Project.has_github_link?(@project) do %>
+    <%= safe github_readme(@project) %>
   <% end %>
-</ul>
-
-<%= if Project.has_github_link?(@project) do %>
-  <%= safe github_readme(@project) %>
-<% end %>
+</article>
 
 <div id='comments'>
   <%= render "disqus.html" %>

@@ -264,14 +264,6 @@ input[type="submit"] {
     @media screen and (min-width: 40em) {
       .type-system-geometric h4 {
         font-size: 1.3em; } }
-  .type-system-geometric code {
-    white-space: nowrap;
-    background: #F7F7F7;
-    border: 1px solid #E0E0E0;
-    border-radius: 0.28125em;
-    padding: .1em .4em;
-    font-size: .7em;
-    font-style: normal; }
   .type-system-geometric h3 {
     font-family: "Sanchez", serif;
     font-size: 1.4em;
@@ -511,6 +503,49 @@ input[type="submit"] {
     display: table;
     clear: both; }
 
-h2 .comments_link {
+h1 .comments_link {
   font-weight: normal;
   font-size: 0.7em; }
+
+pre code {
+  font-size: 150%;
+  display: block;
+  padding: 1em;
+  background: whitesmoke; }
+
+.project-details {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  background: whitesmoke;
+  padding: 1em; }
+  .project-details:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.project-primary-info {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%; }
+  .project-primary-info:last-child {
+    margin-right: 0; }
+
+.project-links {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  margin-right: 0; }
+  .project-links:last-child {
+    margin-right: 0; }
+  .project-links li a {
+    background: #e8e8e8;
+    display: block;
+    padding: .5em; }
+    .project-links li a:hover {
+      background: gainsboro; }
+
+article {
+  padding: 1em; }
