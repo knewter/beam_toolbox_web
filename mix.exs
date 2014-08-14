@@ -26,7 +26,7 @@ defmodule BeamToolboxWeb.Mixfile do
     [
       {:phoenix, github: "phoenixframework/phoenix"},
       {:cowboy, "~> 1.0.0"},
-      {:beam_toolbox_data, path: "/home/jadams/elixir/beam_toolbox_data", env: Mix.env},
+      {:beam_toolbox_data, github: "knewter/beam_toolbox_data", env: Mix.env},
       {:cadfaerl,   github: "ddossot/cadfaerl"}
     ]
   end
