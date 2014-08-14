@@ -18,6 +18,6 @@ defmodule BeamToolboxWeb.ProjectView do
   end
 
   def github_readme(project) do
-    BeamToolboxData.Models.Project.GitHub.readme(project)
+    BeamToolboxData.Models.Project.GitHub.readme_caching(project)
   end
 end
