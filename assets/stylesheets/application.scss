@@ -75,3 +75,26 @@ a.category, a.project{
   @extend .hoverable_link;
   margin-bottom: .5em;
 }
+
+a.category {
+  aside {
+    padding: .5em;
+    margin: -.5em .5em -.5em -.5em;
+    width: 3em;
+    text-align: center;
+    display: inline-block;
+    background: $accented-gray;
+  }
+}
+
+a.project {
+  .key {
+    padding: .5em;
+    margin: -.5em .5em -.5em -.5em;
+    background: $accented-gray;
+  }
+  aside {
+    display: inline;
+    color: black;
+  }
+}

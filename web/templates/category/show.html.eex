@@ -1,5 +1,12 @@
 <h1><%= @category.name %></h1>
 
 <%= for project <- @projects do %>
-  <a class='project' href="<%= Router.project_path(id: project.key) %>"><%= project.key %></a>
+  <a class='project' href="<%= Router.project_path(id: project.key) %>">
+    <span class='key'>
+      <%= project.key %>
+    </span>
+    <aside>
+      <%= Project.description(project) %>
+    </aside>
+  </a>
 <% end %>
