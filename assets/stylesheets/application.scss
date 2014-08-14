@@ -8,14 +8,12 @@
 $light-gray: #f5f5f5;
 $gray: darken($light-gray, 5%);
 $accented-gray: darken($light-gray, 10%);
+$lighter-gray: lighten($light-gray, 1%);
 
 .container {
   @include outer-container;
   .primary {
-    @include span-columns(9);
-  }
-  .sidebar {
-    @include span-columns(3);
+    @include span-columns(12);
     @include omega();
   }
 }
@@ -97,4 +95,10 @@ a.project {
     display: inline;
     color: black;
   }
+}
+
+footer {
+  @include outer-container;
+  background: $lighter-gray;
+  padding: 1em;
 }

@@ -8,6 +8,3 @@
   <% end %>
   <%= category_link(:uncategorized) %>
 </section>
-
-<section class='sidebar'>
-</section>

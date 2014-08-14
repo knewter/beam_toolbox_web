@@ -22,8 +22,9 @@
 
     </div> <!-- /container -->
 
-    <div class="footer">
+    <footer>
       <p><a href="http://beam-toolbox.com">BEAM Toolbox</a></p>
-    </div>
+      <p>Built using the <a href="http://github.com/phoenixframework/phoenix">Phoenix Web Framework</a></p>
+    </footer>
   </body>
 </html>
