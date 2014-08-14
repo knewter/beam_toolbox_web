@@ -21,15 +21,15 @@
       <%= if Project.has_github_link?(@project) do %>
         <div class="heading-item">
           <strong>Latest Commit Date</strong>
-          <p><%= Project.GitHub.Statistics.latest_commit_date(Project.github_repo_id(@project)) %></p>
+          <p><%= Project.GitHub.Statistics.Cached.latest_commit_date(Project.github_repo_id(@project)) %></p>
         </div>
         <div class="heading-item">
           <strong>Forks</strong>
-          <p><%= Project.GitHub.Statistics.forks_count(Project.github_repo_id(@project)) %></p>
+          <p><%= Project.GitHub.Statistics.Cached.forks_count(Project.github_repo_id(@project)) %></p>
         </div>
         <div class="heading-item">
           <strong>Stargazers</strong>
-          <p><%= Project.GitHub.Statistics.stargazers_count(Project.github_repo_id(@project)) %></p>
+          <p><%= Project.GitHub.Statistics.Cached.stargazers_count(Project.github_repo_id(@project)) %></p>
         </div>
       <% end %>
     </section>
