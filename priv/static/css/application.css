@@ -596,3 +596,6 @@ footer {
     font-weight: bold;
     margin: -.5em -.5em .5em -.5em;
     padding: .5em; }
+
+.project-details .heading-item {
+  font-size: 75%; }
