@@ -1,21 +1,13 @@
-<div class="latest-projects">
-  <h2>Latest Projects</h2>
-  <ul>
-    <%= for project <- @projects do %>
-      <li>
-        <a href="<%= Router.project_path(id: project.key) %>"><%= project.key %></a>
-      </li>
-    <%= end %>
-  </ul>
-</div>
+<header>
+  <h1>All categories by name</h1>
+</header>
 
-<div class="categories">
-  <h2>Categories</h2>
-  <ul>
-    <%= for category <- @categories do %>
-      <li>
-        <%= category.name %>
-      </li>
-    <%= end %>
-  </ul>
-</div>
+<section class='primary'>
+  <%= for category <- @categories do %>
+    <%= category_link(category) %>
+  <% end %>
+  <%= category_link(:uncategorized) %>
+</section>
+
+<section class='sidebar'>
+</section>

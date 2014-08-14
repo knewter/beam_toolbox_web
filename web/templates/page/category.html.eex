@@ -1,0 +1,3 @@
+<a class='category' href='<%= Router.category_path(id: @category.slug) %>'>
+  <%= @category.name %>
+</a>

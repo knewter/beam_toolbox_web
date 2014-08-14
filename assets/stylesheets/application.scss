@@ -11,11 +11,11 @@ $accented-gray: darken($light-gray, 10%);
 
 .container {
   @include outer-container;
-  .latest-projects {
-    @include span-columns(6);
+  .primary {
+    @include span-columns(9);
   }
-  .categories {
-    @include span-columns(6);
+  .sidebar {
+    @include span-columns(3);
     @include omega();
   }
 }
@@ -38,6 +38,15 @@ pre {
   }
 }
 
+.hoverable_link {
+  background: $gray;
+  display: block;
+  padding: .5em;
+  &:hover {
+    background: $accented-gray;
+  }
+}
+
 .project-details {
   @include outer-container;
   background: $light-gray;
@@ -53,16 +62,16 @@ pre {
   @include omega();
   li {
     a {
-      background: $gray;
-      display: block;
-      padding: .5em;
-      &:hover {
-        background: $accented-gray;
-      }
+      @extend .hoverable_link;
     }
   }
 }
 
 article {
   padding: 1em;
+}
+
+a.category, a.project{
+  @extend .hoverable_link;
+  margin-bottom: .5em;
 }

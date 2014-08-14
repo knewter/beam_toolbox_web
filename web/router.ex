@@ -6,5 +6,6 @@ defmodule BeamToolboxWeb.Router do
 
   scope alias: BeamToolboxWeb do
     resources "projects", ProjectController
+    resources "categories", CategoryController
   end
 end

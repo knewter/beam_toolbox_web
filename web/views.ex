@@ -4,6 +4,8 @@ defmodule BeamToolboxWeb.Views do
     quote do
       use Phoenix.View
       alias BeamToolboxWeb.Router
+      alias BeamToolboxData.Models.Project
+      alias BeamToolboxData.Models.Category
       import unquote(__MODULE__)
 
       # This block is expanded within all views for aliases, imports, etc
