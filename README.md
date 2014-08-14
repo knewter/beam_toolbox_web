@@ -18,3 +18,17 @@ If you want the CSS to be watched under development, just run `make watch`
 ## Notes
 
 * If you choose to change the application's structure, you could manually start the router from your code like this `BeamToolboxWeb.Router.start`
+
+## Footnotes, etc.
+
+The BEAM Toolbox is brought to you by Josh Adams of
+[ElixirSips](http://www.elixirsips.com).  If you have suggestions, please send
+them to **josh dot rubyist at gmail dot com**.  I'm also on
+[Twitter](http://twitter.com/knewter) and [GitHub](http://github.com/knewter).
+
+Massive thanks to everyone on the mailing list and IRC for support and
+suggestions.
+
+## License
+
+This project is shared under the [MIT License](/LICENSE).

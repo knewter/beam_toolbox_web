@@ -25,6 +25,7 @@
     <footer>
       <p><a href="http://beam-toolbox.com">BEAM Toolbox</a></p>
       <p>Built using the <a href="http://github.com/phoenixframework/phoenix">Phoenix Web Framework</a></p>
+      <p>Something miscategorized?  Suggestions?  <a href="https://github.com/knewter/beam_toolbox_web/issues">Open an issue!</a></p>
     </footer>
   </body>
 </html>
