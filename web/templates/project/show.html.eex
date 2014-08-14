@@ -6,6 +6,18 @@
         <a href='#comments' class='comments_link'>(Comments)</a>
       </h1>
       <p class='description'><%= Project.description(@project) %></p>
+      <div class="heading-item">
+        <strong>Contributors</strong>
+        <ul>
+          <%= for contributor <- Project.contributors(@project) do %>
+            <li><%= contributor %></li>
+          <% end %>
+        </ul>
+      </div>
+      <div class="heading-item">
+        <strong>License</strong>
+        <p><%= Project.license(@project) %></p>
+      </div>
     </section>
 
     <ul class='project-links'>

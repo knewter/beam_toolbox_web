@@ -585,3 +585,14 @@ footer {
   font-size: 100%;
   background-color: gainsboro;
   padding: .5em; }
+
+.heading-item {
+  color: #999999;
+  display: inline-block;
+  margin-right: 1em;
+  padding: .5em; }
+  .heading-item strong {
+    display: block;
+    font-weight: bold;
+    margin: -.5em -.5em .5em -.5em;
+    padding: .5em; }
