@@ -4,8 +4,7 @@ defmodule BeamToolboxWeb.PageController do
   alias BeamToolboxData.Models.Category
 
   def index(conn, _params) do
-    projects = Project.for_category(:uncategorized)
-    categories = Category.all
-    render conn, "index", %{projects: projects, categories: categories}
+    categories = Category.all |> Enum.sort(&(&1.slug <= &2.slug))
+    render conn, "index", %{categories: categories}
   end
 end
