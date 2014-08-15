@@ -561,11 +561,15 @@ a.category aside {
   text-align: center;
   display: inline-block;
   background: gainsboro; }
+a.category:hover aside {
+  background: #cfcfcf; }
 
 a.project .key {
   padding: .5em;
   margin: -.5em .5em -.5em -.5em;
   background: gainsboro; }
+a.project:hover .key {
+  background: #cfcfcf; }
 a.project aside {
   display: inline;
   color: black; }

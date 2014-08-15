@@ -8,6 +8,7 @@
 $light-gray: #f5f5f5;
 $gray: darken($light-gray, 5%);
 $accented-gray: darken($light-gray, 10%);
+$darker-accented-gray: darken($accented-gray, 5%);
 $lighter-gray: lighten($light-gray, 1%);
 $gray-text: #999;
 
@@ -87,6 +88,9 @@ a.category {
     display: inline-block;
     background: $accented-gray;
   }
+  &:hover aside {
+    background: $darker-accented-gray;
+  }
 }
 
 a.project {
@@ -94,6 +98,9 @@ a.project {
     padding: .5em;
     margin: -.5em .5em -.5em -.5em;
     background: $accented-gray;
+  }
+  &:hover .key {
+    background: $darker-accented-gray;
   }
   aside {
     display: inline;
