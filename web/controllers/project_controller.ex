@@ -2,6 +2,11 @@ defmodule BeamToolboxWeb.ProjectController do
   use Phoenix.Controller
   alias BeamToolboxData.Models.Project
 
+  def index(conn, _) do
+    projects = Project.all
+    render conn, "index", %{projects: projects}
+  end
+
   def show(conn, %{"id" => key}) do
     project = Project.find_by_key(key)
     category_projects = other_projects_for_category(project)

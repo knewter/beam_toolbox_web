@@ -42,11 +42,11 @@
     </ul>
   </div>
 
-  <article>
-    <%= if Project.has_github_link?(@project) do %>
+  <%= if Project.has_github_link?(@project) do %>
+    <article>
       <%= safe github_readme(@project) %>
-    <% end %>
-  </article>
+    </article>
+  <% end %>
 
   <div id='comments'>
     <%= render "disqus.html" %>
