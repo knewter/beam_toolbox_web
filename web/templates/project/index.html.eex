@@ -1,5 +1,5 @@
 <h1>Projects</h1>
 
 <%= for project <- @projects do %>
-  <a class='project' href="<%= Router.project_path(id: project.key) %>"><%= project.key %></a>
+  <a class='project' href="<%= Router.projects_path(:show, project.key) %>"><%= project.key %></a>
 <% end %>

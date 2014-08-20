@@ -3,7 +3,7 @@ defmodule BeamToolboxWeb.ProjectController do
   alias BeamToolboxData.Models.Project
 
   def index(conn, _) do
-    projects = Project.all
+    projects = Project.all |> Enum.sort(&(&1.key <= &2.key))
     render conn, "index", %{projects: projects}
   end
 

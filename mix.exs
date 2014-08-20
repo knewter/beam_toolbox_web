@@ -24,8 +24,8 @@ defmodule BeamToolboxWeb.Mixfile do
   # { :barbat, "~> 0.1", github: "elixir-lang/barbat" }
   defp deps do
     [
-      {:phoenix, github: "phoenixframework/phoenix"},
       {:cowboy, "~> 1.0.0"},
+      {:phoenix, github: "phoenixframework/phoenix"},
       {:beam_toolbox_data, github: "knewter/beam_toolbox_data", env: Mix.env},
       {:cadfaerl,   github: "ddossot/cadfaerl"}
     ]

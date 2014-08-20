@@ -57,7 +57,7 @@
   <div class='module'>
     <h3><%= Enum.count(@category_projects) %> other projects in this category</h3>
     <%= for project <- @category_projects do %>
-      <a class='project' href="<%= Router.project_path(id: project.key) %>"><%= project.key %></a>
+      <a class='project' href="<%= Router.projects_path(:show, project.key) %>"><%= project.key %></a>
     <% end %>
   </div>
 </section>
