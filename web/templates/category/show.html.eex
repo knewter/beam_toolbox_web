@@ -1,7 +1,7 @@
 <h1><%= @category.name %></h1>
 
 <%= for project <- @projects do %>
-  <a class='project' href="<%= Router.projects_path(:show, project.key) %>">
+  <a class='project' href="<%= Router.project_path(:show, project.key) %>">
     <span class='key'>
       <%= project.key %>
     </span>

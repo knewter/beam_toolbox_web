@@ -1,4 +1,4 @@
-<a class='category' href='<%= Router.categories_path(:show, @category.slug) %>'>
+<a class='category' href='<%= Router.category_path(:show, @category.slug) %>'>
   <aside>
     <%= @count %>
   </aside>

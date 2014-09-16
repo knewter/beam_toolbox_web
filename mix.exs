@@ -4,7 +4,6 @@ defmodule BeamToolboxWeb.Mixfile do
   def project do
     [ app: :beam_toolbox_web,
       version: "0.0.1",
-      elixir: "~> 0.15.0",
       elixirc_paths: ["lib", "web"],
       deps: deps ]
   end
@@ -25,7 +24,7 @@ defmodule BeamToolboxWeb.Mixfile do
   defp deps do
     [
       {:cowboy, "~> 1.0.0"},
-      {:phoenix, github: "phoenixframework/phoenix"},
+      {:phoenix, "~> 0.4.1"},
       {:beam_toolbox_data, github: "knewter/beam_toolbox_data", env: Mix.env},
       {:cadfaerl,   github: "ddossot/cadfaerl"}
     ]
