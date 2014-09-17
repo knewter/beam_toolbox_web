@@ -7,7 +7,8 @@ defmodule BeamToolboxWeb.Supervisor do
 
   def init([]) do
     children = [
-      worker(BeamToolboxWeb.Synchronizer, [])
+      worker(BeamToolboxWeb.Synchronizer, []),
+      worker(BeamToolboxWeb.Router, [], function: :start)
     ]
 
     # See http://elixir-lang.org/docs/stable/Supervisor.Behaviour.html

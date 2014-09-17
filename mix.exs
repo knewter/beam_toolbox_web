@@ -12,7 +12,7 @@ defmodule BeamToolboxWeb.Mixfile do
   def application do
     [
       mod: { BeamToolboxWeb, [] },
-      applications: [:phoenix, :beam_toolbox_data]
+      applications: [:cowboy, :phoenix, :poolboy, :postgrex, :ecto, :cadfaerl, :jsex, :beam_toolbox_data]
     ]
   end
 
@@ -26,7 +26,8 @@ defmodule BeamToolboxWeb.Mixfile do
       {:cowboy, "~> 1.0.0"},
       {:phoenix, "~> 0.4.1"},
       {:beam_toolbox_data, github: "knewter/beam_toolbox_data", env: Mix.env},
-      {:cadfaerl,   github: "ddossot/cadfaerl"}
+      {:cadfaerl,   github: "ddossot/cadfaerl"},
+      {:exrm, "~> 0.14.3"}
     ]
   end
 end
