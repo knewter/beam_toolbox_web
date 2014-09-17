@@ -3,7 +3,7 @@
   "cowboy": {:package, "1.0.0"},
   "cowlib": {:package, "1.0.0"},
   "decimal": {:git, "git://github.com/ericmj/decimal.git", "5d47511cfa4d9049c1a9581df7f804c989ec34c0", []},
-  "ecto": {:git, "git://github.com/elixir-lang/ecto.git", "448a7d46d522fc121e193c79abf961d9773faf8e", []},
+  "ecto": {:git, "git://github.com/elixir-lang/ecto.git", "541d5e1d46cd077c450f652a50f2500cc56f199b", []},
   "hackney": {:git, "git://github.com/benoitc/hackney.git", "a83f57ff5bca1938201f110b06db4c08a78e9db6", []},
   "hex_client": {:git, "git://github.com/knewter/hex_client.git", "9ec83d8608aa2f3286ff8b84f63b63e3ba414c19", []},
   "hoedown": {:git, "git://github.com/hoedown/hoedown.git", "27e9e035fc2e2e535650d75a0e6c5eecb35fdccf", []},
